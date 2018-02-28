@@ -5,7 +5,7 @@
 #define PAUSAR printf("\n\n") & system("pause") //pula duas linhas e espera o usuario para continuar.
 
 int i, j, linha, coluna;
-int matrix[10][107]; //e possivel mudar o tamanho da matriz aqui e manter quase todos os calculos em perfeito funcionamento.
+int matrix[10][10]; //e possivel mudar o tamanho da matriz aqui e manter quase todos os calculos em perfeito funcionamento.
 
 void matriz(){ //mostra uma matriz com numeros aleatorios.
 	printf("\n\tMatriz[%d][%d]\n", linha, coluna);
@@ -85,7 +85,7 @@ void inferior(){ //mostra o triangulo inferior
 	}
 }
 
-void multiplicar(){ //cria mais uma matriz 10x10 aleatória, mostra as duas na tela, e mostra o produto delas.
+void multiplicar(){ //cria mais uma matriz 10x10 aleatÃ³ria, mostra as duas na tela, e mostra o produto delas.
 	int matrixMulti[linha][coluna], matrixResult[linha][coluna];
 	int k, multi = 0;
 	printf("\n\nMultiplicar duas Matrizes:");
