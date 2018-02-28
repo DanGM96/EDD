@@ -98,7 +98,7 @@ void multiplicar(){ //cria mais uma matriz 10x10 aleatória, mostra as duas na t
 	}
 	
 	printf("\n\n\tMatrizDOIS[%d][%d]\n", linha, coluna); 
-	for(i = 0; i < linha; i++){ //Imprime a segunda matriz.
+	for(i = 0; i < linha; i++){ //Cria e imprime a segunda matriz.
 		printf("\n");	
 		for(j= 0; j < coluna; j++){
 			matrixMulti[i][j] = rand() % 10;
@@ -112,8 +112,8 @@ void multiplicar(){ //cria mais uma matriz 10x10 aleatória, mostra as duas na t
 		for(j= 0; j < coluna; j++){
 			matrixResult[i][j] = 0; //Inicializar Matriz.
 			for(k = 0; k < coluna; k++)
-				matrixResult[i][j] += matrix[i][k] * matrixMulti[k][j];
-			printf("[%d]", matrixResult[i][j]);
+				matrixResult[i][j] += matrix[i][k] * matrixMulti[k][j]; //Calcular novos valores das posicoes na matriz.
+			printf("[%d]", matrixResult[i][j]); //Imprime Nova Matriz.
 		}
 	}
 }
